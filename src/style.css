@@ -5,12 +5,14 @@
 }
 
 .galaxy {
-  background-color: black;
-  .mainphoto {
-    max-width: 100%;
-    opacity: 60%;
-    filter: blur(1.5px);
-  }
+  background-image: url("../src/img/galaxy.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+  position: relative;
 }
 
 .ast1 {
@@ -18,6 +20,14 @@
   top: 150px;
   left: 100px;
   width: 400px;
+
+  animation-name: spin;
+  animation-duration: 15s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-direction: normal;
 }
 
 .ast2 {
@@ -25,4 +35,57 @@
   top: 300px;
   right: 100px;
   width: 300px;
+
+  animation-name: spin2;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-direction: normal;
+}
+
+.ast3 {
+  position: absolute;
+  bottom: 2px;
+  left: 500px;
+  width: 270px;
+
+  animation-name: spin2;
+  animation-duration: 12s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-direction: normal;
+}
+
+.ast4 {
+  position: absolute;
+  top: 420px;
+  left: 820px;
+  width: 270px;
+
+  animation-name: spin2;
+  animation-duration: 25s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-direction: normal;
+}
+
+.rocket {
+  position: absolute;
+  width: 600px;
+  top: 230px;
+  left: 650px;
+
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-direction: normal;
 }
