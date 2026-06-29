@@ -3,3 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.galaxy {
+  background-color: black;
+  .mainphoto {
+    max-width: 100%;
+    opacity: 60%;
+    filter: blur(1.5px);
+  }
+}
+
+.ast1 {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  width: 400px;
+}
+
+.ast2 {
+  position: absolute;
+  top: 300px;
+  right: 100px;
+  width: 300px;
+}
